@@ -1,7 +1,9 @@
-use bindings::windows::application_model::data_transfer::{Clipboard, DataPackage};
-use bindings::windows::data::xml::dom::XmlDocument;
-use bindings::windows::foundation::Uri;
-use bindings::windows::web::syndication::SyndicationClient;
+mod generated;
+
+use generated::windows::application_model::data_transfer::{Clipboard, DataPackage};
+use generated::windows::data::xml::dom::XmlDocument;
+use generated::windows::foundation::Uri;
+use generated::windows::web::syndication::SyndicationClient;
 
 fn main() -> winrt::Result<()> {
     clipboard()?;
